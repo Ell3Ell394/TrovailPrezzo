@@ -328,9 +328,8 @@ exports.showFromDb = function(req, res){
   ],      // optional callback
 function(err, results){
 //devo rimuovere i risultati []
-results = results.filter(function(value){
-  return value !=null;
-})
+results = results.filter(n =>{ return n.length > 0 }); 
+
 console.log(results);
 
 //newResults = results.filter(Boolean);

@@ -1,0 +1,34 @@
+{
+  "name": "trovailprezzo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bootstrap": "^3.3.6",
+    "mongodb": "^2.1.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.3",
+    "x-ray": "^2.0.2"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fen24/TrovailPrezzo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fen24/TrovailPrezzo/issues"
+  },
+  "homepage": "https://github.com/Fen24/TrovailPrezzo#readme"
+}
+
+
+
