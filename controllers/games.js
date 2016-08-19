@@ -36,7 +36,7 @@ var mwPS4Model = require('../models/MediaworldPS4')
 var mwXboxOneModel = require('../models/MediaworldXboxOne')
 
 var tronyPS4Model = require('../models/TronyPS4')
-var tronyXboxOneModel = require('../models/tronyXboxOne')
+var tronyXboxOneModel = require('../models/TronyXboxOne')
 
 
 var gameListModel = require('../models/gamelistscraping')
@@ -512,19 +512,3 @@ function(err, results){
 }
 
 */
-
-
-
-
-
-    
-
-
-
-exports.update = function() {};
-exports.delete = function() {};
-
-
-
-
-
