@@ -6,7 +6,9 @@ var mongoose = require('mongoose');
 var fs = require('fs');
 
 var mongoUri = 'mongodb://localhost:27017/gamesDB';
-mongoose.connect(mongoUri);
+
+
+mongoose.connect(process.env.MONGOLAB_URI || mongoUri);
 var db = mongoose.connection;
 db.on('error', function () {
   throw new Error('unable to connect to database at ' + mongoUri);
@@ -31,7 +33,7 @@ app.get('/', function(req, res){
 
 
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
 console.log('Listening on port 3001...');
 
 
