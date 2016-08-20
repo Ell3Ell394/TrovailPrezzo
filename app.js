@@ -1,6 +1,4 @@
 
-//var Xray = require('x-ray');  
-//var x = Xray();
 
 var mongoose = require('mongoose');
 var fs = require('fs');
@@ -25,6 +23,7 @@ require('./models/game');
 
 require('./routes/routes')(app);
 app.use(express.static(__dirname));
+
 
 
 app.get('/', function(req, res){

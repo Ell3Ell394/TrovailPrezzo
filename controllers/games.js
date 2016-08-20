@@ -55,7 +55,7 @@ exports.DataList= function(req, res){
         gamelists.collection.insert(scrapeData) 
          
          }
-      res.send(101);
+      res.send(202);
        });
 
 
@@ -325,31 +325,22 @@ exports.showFromDb = function(req, res){
       })
 
    },
-  ],      // optional callback
+  ],      
 function(err, results){
+
 //devo rimuovere i risultati []
-results = results.filter(n =>{ return n.length > 0 }); 
+results = results.filter(n =>{ return n.length > 0 }); //arrow function
 
-console.log(results);
-
-//newResults = results.filter(Boolean);
-
-//console.log(newResults);
-results= results.map(game => {
-
-
-  delete game[0].score;
-  return game[0];
-  
-})
+//console.log(results);
+  results= results.map(game => {
+    //console.log(game)
+    delete game[0].score;
+    return game[0];
+  })
 
   console.log(results);
-
-
   res.send(results);
-  //res.send(results)
-  //console.log(results);
-  });
+});
 
 }
 

@@ -42,8 +42,15 @@ $("#go").on('click', function(){
   var el = document.createElement('a');
   
 
-  console.log(title);
-   
+  
+
+
+  if(title == ''){
+
+      $("#giochi").focus();
+
+  }else{
+     console.log(title);
     $("#tabella").empty();
     
     $.getJSON("/games/uni/user/"+title, function(result) { 
@@ -67,6 +74,9 @@ $("#go").on('click', function(){
 
       console.log("ok");
     }) 
+
+  }
+
 })
 
 });

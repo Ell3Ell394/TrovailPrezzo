@@ -14,14 +14,36 @@
    
    <style type="text/css">
         
-        .top-buffer { margin-top:60px; }
-        h1{text-align:center; color:red;}
+        .top-buffer60 { 
+          margin-top:60px; }
+
+        .top-buffer10 { 
+          margin-top:10px; }
+
+        .top-buffer30 { 
+          margin-top:30px; }
+
+        .fa,
+        .fa:hover{
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        h1{
+          text-align:center; 
+          color:red;}
+
         p{text-align: center;}
 
-        .search{
+        .background{
           background-color: #59ABE3;
-          padding-bottom: 10px;
           font-family: 'Quicksand', sans-serif;
+        }
+        .search{
+          
+          padding-bottom: 10px;
+         
         }
 
         #giochi{
@@ -44,17 +66,21 @@
  
  <body>
   <div class="container-fluid">
-    <div class = "row search">
-          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center row top-buffer">
+    <div class = "row background text-center">
+          
+          <div class="col-xs-12 col-md-6 col-md-offset-3 top-buffer60">
+
             <i class="fa fa-binoculars fa-5x" aria-hidden="true"></i>
+           <h2>Cerca il miglior prezzo per il videogioco che desideri</h2>
 
-           
-            <h2>Cerca il miglior prezzo per il videogioco che desideri!</h2>
           </div>
-    
+    </div>
 
 
-    
+
+
+    <div class = "row search background">
+
       <div class = "col-xs-12 col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4">
         
         <div id ="appenditi" class="input-group">
@@ -66,15 +92,16 @@
       </div>      
   </div>
 
+    <div class ="row text-center top-buffer10">
+        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x " aria-hidden="true"></i></a>
 
-    <div class ="row top-buffer">
+
+    </div>
+    <div class ="row top-buffer30">
       <div class ="col-md-6 col-md-offset-3"> 
       <table id ="tabella" class="table table-striped results ">
                     
 
-        
-          
-        
       </table>
       </div>
     </div>
