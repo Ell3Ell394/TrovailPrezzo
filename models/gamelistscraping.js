@@ -1,10 +1,11 @@
-module.exports.getData = function(title, callback){
+module.exports.getData = function(callback){
 
 var Xray = require('x-ray');
 var x = Xray();
 
 //var arr1 = "1 a b c d e f g h i j k l m n o p q r s t u v w x y z";
 //var arr = arr1.split(' ');
+
 var i = 0;
 //var arrLenght = arr.arrLenght;
 var arr = "1abcdefghijklmnopqrstuvwxyz".split("");
@@ -29,7 +30,7 @@ function vaiAvanti(i,arr,array) {
 
         	if (i > arr.length) {
                 callback(null, array);
-                console.log(array)
+                //console.log(array)
         	}else{ 
             
             array = array.concat(obj);

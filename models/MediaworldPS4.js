@@ -1,4 +1,4 @@
-module.exports.getData = function(title, callback){
+module.exports.getData = function(callback){
 
 var Xray = require('x-ray');
 var x = Xray();
