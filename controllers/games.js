@@ -44,7 +44,7 @@ var gameListModel = require('../models/gamelistscraping')
 
 var CronJob = require('cron').CronJob;
 
-new CronJob('00 00 18 * * *', function() {
+new CronJob('00 05 20 * * *', function() {
   gameListModel.getData(function(err, scrapeData) {
          if (err) {
               // do something with error
@@ -53,6 +53,7 @@ new CronJob('00 00 18 * * *', function() {
                          
           gamelists.collection.remove( { } )
           gamelists.collection.insert(scrapeData) 
+          console.log("lista")
            }
          });
 }, null, true, 'Europe/Rome');
@@ -60,7 +61,7 @@ new CronJob('00 00 18 * * *', function() {
 
 /// funziona 18/07/1016
 //gratta i dati  dei giochi dai siti
-new CronJob('00 00 18 * * *', function() {
+new CronJob('00 05 20 * * *', function() {
    unieuroPS4Model.getData(function(err, scrapeData) {
         if (err) {
              // do something with errors
