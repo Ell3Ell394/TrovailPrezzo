@@ -1,21 +1,21 @@
 var mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
-var MusicianSchema = new Schema({
+var GameSchema = new Schema({
   title: String,
   link: String,
   prezzo: Number,
   console: String
 });
 
-mongoose.model('unieuroPS4', MusicianSchema);
-mongoose.model('uniEuroXboxOne', MusicianSchema);
+mongoose.model('unieuroPS4', GameSchema);
+mongoose.model('uniEuroXboxOne', GameSchema);
 
-mongoose.model('mwPS4', MusicianSchema);
-mongoose.model('mwXboxOne', MusicianSchema);
+mongoose.model('mwPS4', GameSchema);
+mongoose.model('mwXboxOne', GameSchema);
 
-mongoose.model('tronyPS4', MusicianSchema);
-mongoose.model('tronyXboxOne', MusicianSchema);
+mongoose.model('tronyPS4', GameSchema);
+mongoose.model('tronyXboxOne', GameSchema);
 
 
 
