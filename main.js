@@ -65,7 +65,7 @@ $("#go").on('click', function(){
 
        
           var tblRow = "<tr>" + "<td>" + f.title + "</td>" +"<td>" + f.prezzo + "</td>"  +
-            "<td>" + "<a href="+ '"'+f.link+'"' + ">"+"Link a "+el.hostname +"</a>"+ "</td>" +  "</tr>"
+            "<td>" + "<a href="+ '"'+f.link+'"' +"target="+'"_blank"' +">"+"Link a "+el.hostname +"</a>"+ "</td>" +  "</tr>"
                       
           $(tblRow).appendTo("#tabella");
         });
